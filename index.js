@@ -1,21 +1,17 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const BOT_TOKEN = 'NDU5ODI0MzQ4OTkyMjQxNjY0.Dg-vnw.0VVCDYwF0DKHn4e0KeoE38tAvbc';
 
-client.on("ready", () => {	
+client.on('ready', () => {	
+	console.log("Sono pronta, Maestro Tori.")
 	bot.user.setActivity("cercare le Armi dei Peccati Capitali")
 	bot.user.setStatus('Online')
 });
 
-client.login(process.env.BOT_TOKEN);
-
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
-  response.sendStatus(200);
+client.on('message', message => {
+	if (message.content === 'P-01s') message.reply('Noi due siamo incompatibili, come due linee parallele.');
 });
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
+
+client.login(BOT_TOKEN);
+
+
