@@ -1,10 +1,10 @@
 {
-  "name": "prova",
+  "name": "P-01s",
   "version": "1.0.0",
-  "description": "prova bot",
+  "description": "Bot per Owari subs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Tomlink",
   "license": "ISC",
