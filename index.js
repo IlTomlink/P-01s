@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const BOT_TOKEN = 'NDU5ODI0MzQ4OTkyMjQxNjY0.Dg-vnw.0VVCDYwF0DKHn4e0KeoE38tAvbc';
+const BOT_TOKEN =_process.env.BOT_TOKEN;
 
 client.on('ready', () => {	
 	console.log("Sono pronta, Maestro Tori.")
