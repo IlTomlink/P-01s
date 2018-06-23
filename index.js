@@ -6,4 +6,4 @@ client.on("ready", () => {
 	bot.user.setStatus('Online')
 });
 
-client.login(process.env.NDU5ODI0MzQ4OTkyMjQxNjY0.Dg8s8Q.qUDrjqwmOGs-Lb1GnAJlljnTCjE);
+client.login(process.env.BOT_TOKEN);
