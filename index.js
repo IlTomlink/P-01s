@@ -12,6 +12,5 @@ client.on('message', message => {
 	if (message.content === 'P-01s') message.reply('Noi due siamo incompatibili, come due linee parallele.');
 });
 
-client.login(BOT_TOKEN);
-
+client.login(BOT_TOKEN).catch(err => console.log(err));
 
